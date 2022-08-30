@@ -1,0 +1,31 @@
+*{
+    /* font-family: 'Rubik Iso', cursive; */
+    font-kerning: 0.5;
+}
+
+/* TIP: The browser may have a more specific font-styling that will override your styles if you only apply the style to the body. Therefore, either get more specific in your code or use the (*) tag. */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    background-color: #1F1b29;
+}
+button{
+    background: none;
+    font-family: 'Rubik Iso', cursive;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.3s;/*only use all if there are no other properties that you want a different transition for later*/
+}
+
+button:hover{
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);/*negative numbers move up*/
+    cursor: crosshair;
+}
